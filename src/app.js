@@ -16,8 +16,8 @@ class App {
     }
 
     database() {
-        mongose.connect("mongodb+srv://ttalzero:ff0VfDho1tuEfLlo@cluster0.agu4l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",                                  
-        { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true,  useFindAndModify : false }
+        mongose.connect("mongodb+srv://ttalzero:ff0VfDho1tuEfLlo@cluster0.agu4l.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+            { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true, useFindAndModify: false }
         );
     }
 
