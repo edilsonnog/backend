@@ -8,7 +8,7 @@ class SessionController{
 
         //verificar se usuário existe no sistema
         const user = await User.findOne({
-            username
+            username,
         });
 
         if(!user) {
@@ -24,7 +24,7 @@ class SessionController{
 
         const token = sign({}, "a3f7c365677abec9f3c2a927669b60c2", {
             subject: new String(user._id),
-            expiresIn: "1d",
+            expiresIn: '1d',
         });
 
         return response.json({
