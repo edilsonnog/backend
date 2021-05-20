@@ -1,6 +1,7 @@
 import express from 'express';
 import mongose, { mongo } from "mongoose";
 import routes from './routes';
+import cors from 'cors';
 
 class App {
     constructor() {
@@ -12,6 +13,7 @@ class App {
     }
 
     middleware() {
+        this.server.use(cors());
         this.server.use(express.json());
     }
 
